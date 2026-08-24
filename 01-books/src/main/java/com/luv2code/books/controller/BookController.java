@@ -11,11 +11,13 @@ public class BookController {
 
     private final List<Book> books = new ArrayList<>();
 
-    public BookController() {
+    public BookController()// why use this
+    {
         initializeBooks();
     }
 
-    private void initializeBooks() {
+    private void initializeBooks()
+    {
         books.addAll(List.of(
                 new Book("Title one", "Author one", "science"),
                 new Book("Title two", "Author two", "science"),
@@ -24,8 +26,14 @@ public class BookController {
                 new Book("Title five", "Author five", "math"),
                 new Book("Title six", "Author six", "math")
         ));
-    }
 
+    }
+    @GetMapping("/books")
+public  List<Book> getBooks()
+{
+return books;
+
+}
   
 }
 

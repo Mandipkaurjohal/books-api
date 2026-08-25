@@ -16,8 +16,7 @@ public class BookController {
         initializeBooks();
     }
 
-    private void initializeBooks()
-    {
+    private void initializeBooks() {
         books.addAll(List.of(
                 new Book("Title one", "Author one", "science"),
                 new Book("Title two", "Author two", "science"),
@@ -28,13 +27,11 @@ public class BookController {
         ));
 
     }
-    @GetMapping("/books")
-public  List<Book> getBooks()
-{
-return books;
 
-}
-  
+    @GetMapping("/books")
+    public List<Book> getBooks() {
+        return books;
+    }
 }
 
 

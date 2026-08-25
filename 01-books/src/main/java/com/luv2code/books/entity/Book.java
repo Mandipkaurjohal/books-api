@@ -8,9 +8,9 @@ public class Book {
 
     private String category;
 
-    public Book() {
-        System.out.println("execute the constructor");
-    }
+//    public Book() {
+//        System.out.println("execute the constructor");
+//    }
 
     public Book(String title, String author, String category) {
         this.title = title;
